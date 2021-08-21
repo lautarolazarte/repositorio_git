@@ -1,0 +1,166 @@
+@charset "UTF-8";
+body header {
+  background-color: #f2f2f2;
+  background-image: linear-gradient(#bbbbbb, #f2f2f2);
+  padding-bottom: 3vh; }
+  body header h1 {
+    color: #222326;
+    text-align: center;
+    font-family: 'Tinos', serif; }
+  body header .lista {
+    color: #727273;
+    font-family: 'Alegreya', serif;
+    font-family: 'Tinos', serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around; }
+    body header .lista:hover {
+      color: #404040; }
+
+body .grids {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr 4fr 4fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5vh; }
+
+@media only screen and (max-widht: 320px) {
+  body {
+    grid-template-columns: 1, 4fr; } }
+
+@media only screen and (max-widht: 768px) {
+  body {
+    grid-template-columns: 3, 4fr; } }
+
+body .titulo {
+  color: #222326;
+  text-align: center;
+  text-align: center;
+  font-family: 'Tinos', serif; }
+
+body .gridI {
+  background-color: #f2f2f2;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "imgI1 imgI2 imgI3"; }
+
+body .imgI1 {
+  height: 50vh;
+  width: 65vh;
+  display: grid; }
+
+body .imgI2 {
+  height: 50vh;
+  width: 65vh;
+  display: grid; }
+
+body .imgI3 {
+  height: 50vh;
+  width: 65vh;
+  display: grid; }
+
+body .imgH3 {
+  color: #222326;
+  text-align: center;
+  text-align: center;
+  font-family: 'Tinos', serif; }
+  body .imgH3:hover {
+    color: #404040; }
+
+body {
+  background-color: #f2f2f2; }
+  body h2 {
+    color: #222326;
+    text-align: center;
+    font-family: 'Tinos', serif; }
+  body .imgPista {
+    display: flex;
+    align-items: center; }
+  body .aerosilla {
+    background-image: url(https://images.clarin.com/2015/03/25/Skkpto07g_1256x620.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5vh; }
+  body .tableA {
+    color: #222326;
+    width: 60vh;
+    height: 50vh; }
+    body .tableA .thA {
+      border-bottom: solid;
+      border-top: solid; }
+  body p {
+    color: #727273;
+    font-family: 'Alegreya', serif;
+    font-family: 'Tinos', serif; }
+
+body div.gridEscuela {
+  background-color: #f2f2f2;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "claseSnow clasesSnow clasesSnow" "claseEsqui claseEsqui claseEsqui" "claseNiños claseNiños claseNiños"; }
+
+body div .claseSnow {
+  display: grid; }
+
+body div.clasesEsqui {
+  display: grid; }
+
+body div.clasesNiños {
+  display: grid; }
+
+body .imgE {
+  width: 40vh;
+  height: 30vh; }
+
+body {
+  background-color: #f2f2f2; }
+  body .contact {
+    background-color: #f2f2f2; }
+  body .cajaDeContacto {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50vh;
+    padding-right: 50vh;
+    padding-bottom: 5vh; }
+  body .pContact {
+    color: #222326;
+    font-family: 'Alegreya', serif;
+    font-family: 'Tinos', serif;
+    text-align: center; }
+
+body footer {
+  background-color: #f2f2f2;
+  background-image: linear-gradient(#f2f2f2, #bbbbbb);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: -10vh; }
+  body footer div .menu {
+    color: #727273;
+    font-family: 'Alegreya', serif;
+    font-family: 'Tinos', serif; }
+    body footer div .menu:hover {
+      color: #404040; }
+  body footer div .titulosF {
+    color: #222326;
+    text-align: center;
+    font-family: 'Tinos', serif; }
+  body footer div .footP {
+    color: #727273;
+    font-family: 'Alegreya', serif;
+    font-family: 'Tinos', serif; }
