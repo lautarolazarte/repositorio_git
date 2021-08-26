@@ -1,0 +1,34 @@
+body{
+    background-color: #f2f2f2;
+    h2{
+        color:#222326;
+        text-align: center;
+        font-family: 'Tinos', serif;
+    }
+    .imgPista{
+        display: flex ;
+        align-items: center;
+    }
+    .aerosilla{
+        background-image: url(https://images.clarin.com/2015/03/25/Skkpto07g_1256x620.jpg);
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-between;
+        padding-top: 5vh;
+    }
+    .tableA{
+        color: #222326;
+        width: 60vh;
+        height: 50vh;
+        .thA{
+            border-bottom: solid;
+            border-top: solid;
+        }
+    }
+    p{
+        color: #727273;
+        font-family: 'Alegreya', serif;
+        font-family: 'Tinos', serif;
+    }
+    }

@@ -1,0 +1,51 @@
+body{
+    footer{
+        div.gridFoot{
+            display: grid;
+            align-content: space-between;
+            grid-row-gap: 5vh;
+            grid-template-columns: repeat(3, 4fr) 2fr;
+            grid-template-rows: repeat(4, 4fr);
+            grid-template-areas: 
+            "F1 F2 F3"
+            "F1 F2 F3"
+            "F1 F2 F3"
+            "F1 F2 F3"
+            }
+            .F1{
+                grid-area: F1;
+            }
+            .F2{
+                grid-area: F2;
+            }
+            .F3{
+                grid-area: F3;
+            }
+        background-color: #f2f2f2;
+        background-image: linear-gradient( #f2f2f2,#bbbbbb );
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: -10vh;
+        div{
+             .menu{
+                color: #727273;
+                font-family: 'Alegreya', serif;
+                font-family: 'Tinos', serif;
+                &:hover{
+                    color: #404040;
+                }
+            }
+            .titulosF{
+                color:#222326;
+                text-align: center;
+                font-family: 'Tinos', serif;
+            }
+            .footP{
+                color: #727273;
+                font-family: 'Alegreya', serif;
+                font-family: 'Tinos', serif;
+            }
+        }      
+        }
+}

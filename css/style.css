@@ -18,19 +18,37 @@ body header {
     body header .lista:hover {
       color: #404040; }
 
-body .grids {
-  display: grid;
-  grid-template-columns: 4fr 4fr 4fr 4fr 4fr;
-  grid-template-rows: 1fr;
-  grid-gap: 5vh; }
-
 @media only screen and (max-widht: 320px) {
-  body {
+  body .gridHead {
     grid-template-columns: 1, 4fr; } }
 
 @media only screen and (max-widht: 768px) {
-  body {
-    grid-template-columns: 3, 4fr; } }
+  body .gridHead {
+    grid-template-columns: 2, 4fr; } }
+
+@media only screen and (max-widht: 320px) {
+  body .gridsEscuela {
+    grid-template-columns: 1, 4fr; } }
+
+@media only screen and (max-widht: 768px) {
+  body .gridsEscuela {
+    grid-template-columns: 2, 4fr; } }
+
+@media only screen and (max-widht: 320px) {
+  body .gridsI {
+    grid-template-columns: 1, 4fr; } }
+
+@media only screen and (max-widht: 768px) {
+  body .gridsI {
+    grid-template-columns: 2, 4fr; } }
+
+@media only screen and (max-widht: 320px) {
+  body .gridFoot {
+    grid-template-columns: 1, 4fr; } }
+
+@media only screen and (max-widht: 768px) {
+  body .gridFoot {
+    grid-template-columns: 2, 4fr; } }
 
 body .titulo {
   color: #222326;
@@ -46,7 +64,7 @@ body .gridI {
   padding-bottom: 5vh;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
   grid-template-areas: "imgI1 imgI2 imgI3"; }
 
 body .imgI1 {
@@ -101,30 +119,53 @@ body {
     font-family: 'Tinos', serif; }
 
 body div.gridEscuela {
+  display: block;
   background-color: #f2f2f2;
-  padding-left: 5vh;
-  padding-right: 5vh;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
   display: grid;
-  justify-content: space-around;
-  align-items: center;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "claseSnow clasesSnow clasesSnow" "claseEsqui claseEsqui claseEsqui" "claseNiños claseNiños claseNiños"; }
+  align-content: space-between;
+  grid-row-gap: 5vh;
+  grid-template-columns: repeat(2, 4fr) 2fr;
+  grid-template-rows: repeat(3, 4fr);
+  grid-template-areas: "claseS claseS imgSn" "clasesE clasesE imgEs" "clasesN clasesN imgNi"; }
 
-body div .claseSnow {
-  display: grid; }
+body div .clasesSnow {
+  display: block;
+  grid-area: claseS; }
+
+body .imgSnow {
+  display: block;
+  grid-area: imgSn;
+  background-image: url(https://cdn.shopify.com/s/files/1/2618/5696/articles/consemos-para-hacer-snowboa_1024x460.png?v=1577105958);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 body div.clasesEsqui {
-  display: grid; }
+  display: block;
+  grid-area: clasesE;
+  background-color: #bbbbbb;
+  border-bottom: solid;
+  border-top: solid; }
+
+body .imgEsqui {
+  display: block;
+  grid-area: imgEs;
+  background-image: url(https://www.rockandpop.cl/wp-content/uploads/2019/08/concurso-pases-el-colorado.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 body div.clasesNiños {
-  display: grid; }
+  display: block;
+  grid-area: clasesN; }
 
-body .imgE {
-  width: 40vh;
-  height: 30vh; }
+body .imgNiños {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: imgNi;
+  background-image: url(https://previews.123rf.com/images/famveldman/famveldman1710/famveldman171000444/87995890-ni%C3%B1o-esquiando-en-las-monta%C3%B1as-ni%C3%B1o-en-la-escuela-de-esqu%C3%AD-deporte-de-invierno-para-ni%C3%B1os-vacaciones.jpg); }
 
 body {
   background-color: #f2f2f2; }
@@ -150,6 +191,19 @@ body footer {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: -10vh; }
+  body footer div.gridFoot {
+    display: grid;
+    align-content: space-between;
+    grid-row-gap: 5vh;
+    grid-template-columns: repeat(3, 4fr) 2fr;
+    grid-template-rows: repeat(4, 4fr);
+    grid-template-areas: "F1 F2 F3" "F1 F2 F3" "F1 F2 F3" "F1 F2 F3"; }
+  body footer .F1 {
+    grid-area: F1; }
+  body footer .F2 {
+    grid-area: F2; }
+  body footer .F3 {
+    grid-area: F3; }
   body footer div .menu {
     color: #727273;
     font-family: 'Alegreya', serif;

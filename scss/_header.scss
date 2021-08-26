@@ -1,0 +1,25 @@
+body{
+    header{
+        background-color: #f2f2f2;
+        background-image: linear-gradient( #bbbbbb,#f2f2f2,);
+        padding-bottom: 3vh;
+        h1{
+            color: #222326;
+            text-align: center;
+            font-family: 'Tinos', serif;
+        }
+          .lista{
+             color: #727273;;
+             font-family: 'Alegreya', serif;
+             font-family: 'Tinos', serif;
+             display: flex;
+             flex-direction: row;
+             justify-content: center;
+             justify-content: space-around;
+             &:hover{
+                 color:#404040;
+             }
+         }
+
+    }
+}
